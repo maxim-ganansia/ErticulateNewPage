@@ -59,7 +59,7 @@ export default function CustomizedTables() {
   // };
 
   return (
-    <div className="tableinfo" style={{ marginTop: "12%"}}>
+    <div className="tableinfo" style={{ marginTop: "3%"}}>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="customized table">
           <TableHead>

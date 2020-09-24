@@ -52,7 +52,7 @@ class Login extends Component {
     let { alertOpen, alertSeverity, alertMessage } = this.state;
     return (
       <>
-        <div style={{backgroundColor: "#3fa1a9"}} className="register-container">
+        <div className="register-container">
           <h1>Sign In</h1>
           <form style={{marginLeft:"37%", marginTop:"3%"}} className="register-form" noValidate onSubmit={this.onSubmit}>
             <TextField

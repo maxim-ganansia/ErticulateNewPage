@@ -68,17 +68,14 @@ const useStyles = makeStyles({
 export default function CustomizedTables() {
   const classes = useStyles();
 
-  // const [DateValue, SetDateValue] = useState(new Date());
   const [mentorValue, setMentorValue] = useState([])
   const [DateTime, SetDateTime] = useState([new Date()]);
-  // const [mentorName, setMentorName] = useState([])
 
   const handleSelect = (e) => {
     console.log(e);
     setMentorValue(e)
   }
 
-  // let stateChoice = "You have selected " + DateTime + " With " + mentorValue
 
   function handleOnSubmit(event) {
     event.preventDefault();
@@ -87,44 +84,7 @@ export default function CustomizedTables() {
   }
 
   return (
-    <div className="tableinfo" style={{ marginTop: "4%" }}>
-      <div className="student-infos">
-        <h1>My Page</h1>
-        <img className="student-picture" src="../Moi.png" />
-        <h1 className="student-name">Maxim-ilan Gnansia</h1>
-        <p className="student-info"></p>
-        {/* <div className="date-picker">
-          <h3 className="calendar-title">Do You want to schedule a time with your Mentor ?</h3>
-          <h4 className="calendar-title">When are You Available ??</h4>
-          <div className="student-choice">
-            <DropdownButton
-              title="Choose a Mentor"
-              id="dropdown-menu-align-right"
-              onSelect={handleSelect}
-              className="dropdown-button"
-            >
-              <Dropdown.Item className="dropdown-list" eventKey="Maxim-ilan Gnansia">Maxim-ilan Gnansia</Dropdown.Item>
-              <Dropdown.Item className="dropdown-list" eventKey="Ben Szuchmacher">Ben Szuchmacher</Dropdown.Item>
-              <Dropdown.Item className="dropdown-list" eventKey="Benyamin Netenyahu">Benyamin Netenyahu</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item className="dropdown-list" eventKey="some link">some link</Dropdown.Item>
-            </DropdownButton>
-            <div className="date-time-div">
-              <DateTimePicker className="date-time-picker"
-                onChange={SetDateTime}
-                value={DateTime}
-              />
-            </div>
-          </div>
-          <h4>{stateChoice}</h4>
-          <button variant="primary"
-            className="submit-calendar-button"
-            type="submit"
-            onClick={(event) => { handleOnSubmit(event) }}><i class="far fa-paper-plane"></i></button>
-        </div> */}
-
-        
-      </div>
+    <div className="tableinfo" >
       <TableContainer style={{ width: "80%", marginLeft: "10%" }} component={Paper}>
         <Table className={classes.table} aria-label="customized table">
           <TableHead>

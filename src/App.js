@@ -21,8 +21,7 @@ import Improvements from "./Components/Improvements"
 // import SignUpPage from "./Components/SignUp"
 import Login from "./Components/Login"
 import Register from "./Components/Register"
-// import Cms from './Cms';
-
+import ProfilePage from "./Components/ProfilePage"
 
 import HomePage from "./HomePage";
 import { createBrowserHistory as createHistory } from "history";
@@ -83,6 +82,7 @@ function App({ calendarStore }) {
             <ChatBox />
           </Route>
           <Route path="/improvements">
+            <ProfilePage/>
             <Improvements />
           </Route>
         </Switch>
